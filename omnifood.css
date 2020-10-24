@@ -12,11 +12,13 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/* Reusable Components */
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
 
+/* Header */
 .hero-text-box {
     position: absolute;
     width: 1140;
@@ -43,24 +45,75 @@ h1{
     margin-bottom: 20px;
 }
 
-.btn {
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover, 
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+/* Buttons */
+
+.btn:link,
+.btn:visited {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 350;
     text-decoration: none;
     border-radius: 200px;
+    transition: background-color 0.5s;
 }
 
-.btn-full {
+.btn-full:link, 
+.btn-full:visited {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
+    margin-right: 16px;
 }
 
-.btn-ghost {
-    border: 1px solid #e67e22;
-    color: #e67e22;
+.btn-full:hover {
+    background-color: #b05d14;
 }
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #b05d14;
+}
+
 .btn-ghost:hover {
-    background-color: #e67e22;
+    background-color: #b05d14;
+    color: #fff;
+    
+}
+.btn:hover, 
+.btn:active {
+    background-color: #b05d14;
 }
