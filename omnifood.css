@@ -31,3 +31,36 @@ header {
     background-position: center;
     height: 100vh;
 }
+
+h1{
+    margin:0;
+    color: #fff;
+    font-size: 240%;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 350;
+    text-decoration: none;
+    border-radius: 200px;
+}
+
+.btn-full {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+
+.btn-ghost {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+.btn-ghost:hover {
+    background-color: #e67e22;
+}
