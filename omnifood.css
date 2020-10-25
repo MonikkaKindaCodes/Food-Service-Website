@@ -14,7 +14,7 @@ html {
 
 .clearfix {zoom: 1;}
 .clearfix:after {
-    content: '.';
+    content: '';
     clear: both;
     display: block;
     height: 0; 
@@ -27,6 +27,9 @@ html {
     margin: 0 auto;
 }
 
+i {
+    color: #e67e22;
+}
 /* Header */
 .hero-text-box {
     position: absolute;
@@ -41,6 +44,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 h1,
@@ -166,6 +170,24 @@ section {
     background-color: #b05d14;
 }
 
+/* Links */
+
+a:link, 
+a:visited {
+  color: #e67e22;  
+  text-decoration: none;
+  padding: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.5s, color 0.5s;
+}
+
+a:hover, 
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
 /* Features Section */
 
 .box {
@@ -177,10 +199,6 @@ section {
     line-height: 145%;
 }
 
-.col-md-1 i {
-    color: #e67e22;
-}
-
 .section-features .long-copy {
     margin-bottom: 30px;
 }
@@ -189,6 +207,7 @@ section {
 
 .section-meals {
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 .meals-showcase {
@@ -213,17 +232,16 @@ section {
     opacity: 0.8;
     width: 100%;
     height: auto;
-    transform: scale(1.15);
+    transform: scale(1.2);
     transition: transform 0.5s, opacity 0.5s;
 }
 
 .meal-photo img:hover {
-    transform: scale(1);
+    transform: scale(1.03);
     opacity: 1;
 }
 
 /* How it works */
-
 .section-steps {
     background-color: #f4f4f4;
 }
@@ -247,7 +265,7 @@ section {
     margin-bottom: 50px;
 }
 
-.works-steps: :last-of-type{
+.works-steps:last-of-type{
     margin-bottom: 80px;
 }
 
@@ -265,10 +283,53 @@ section {
     margin-right: 25px;
 }
 
+.btn-app:link, 
+.btn-app:visited {
+    border: 0;
+}
 .btn-app img {
     height: 50px;
     width: auto;
     margin-right: 10px;
 }
 
+/* Cities */
 
+.cities-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.cities-features {
+    margin-bottom: 5px;
+}
+
+/* Customer Testimonials */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('back-customers.jpg');
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote:before{
+    content:"\201C";
+}
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+}
+blockquote:after{
+    content:"\201D";
+}
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+}
