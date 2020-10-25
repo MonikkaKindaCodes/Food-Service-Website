@@ -12,6 +12,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0; 
+    visibility: hidden;
+}
+
 /* Reusable Components */
 .row {
     max-width: 1140px;
@@ -215,6 +224,10 @@ section {
 
 /* How it works */
 
+.section-steps {
+    background-color: #f4f4f4;
+}
+
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
@@ -237,6 +250,7 @@ section {
 .works-steps: :last-of-type{
     margin-bottom: 80px;
 }
+
 .works-steps .step {
     color: #e67e22;
     border: 2px solid #e67e22;
